@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conekta Quarkus Microservice</title>
+    <style>
+        h1, h2, h3, h4, h5, h6 {
+            margin-bottom: 0.5rem;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 2rem
+        }
+
+        h3 {
+            font-size: 1.75rem
+        }
+
+        h4 {
+            font-size: 1.5rem
+        }
+
+        h5 {
+            font-size: 1.25rem
+        }
+
+        h6 {
+            font-size: 1rem
+        }
+
+        .lead {
+            font-weight: 300;
+            font-size: 2rem;
+        }
+
+        .banner {
+            font-size: 2.7rem;
+            margin: 0;
+            padding: 2rem 1rem;
+            background-color: #e83e8c;
+            color: white;
+        }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+
+        code {
+            font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            font-size: 87.5%;
+            color: #e83e8c;
+            word-break: break-word;
+        }
+
+        .left-column {
+            padding: .75rem;
+            max-width: 75%;
+            min-width: 55%;
+        }
+
+        .right-column {
+            padding: .75rem;
+            max-width: 25%;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+        }
+
+        li {
+            margin: 0.75rem;
+        }
+
+        .right-section {
+            margin-left: 1rem;
+            padding-left: 0.5rem;
+        }
+
+        .right-section h3 {
+            padding-top: 0;
+            font-weight: 200;
+        }
+
+        .right-section ul {
+            border-left: 0.3rem solid #e83e8c;
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="banner lead">
+    Conekta 
+</div>
+
+<div class="container">
+    <div class="left-column">
+        <p class="lead">Quarkus Microservice</p>
+
+        <h2>Architecture</h2>
+        <ul>
+            <li>REST resources: <code>src/main/java/mx/conekta/qk/api</code>.</li>
+            <li>Service stereotypes: <code>src/main/mx/conekta/qk/service</code>.</li>
+            <li>Utility classes: <code>src/main/mx/conekta/qk/util</code>.</li>
+            <li>Static assets: <code>src/main/resources/META-INF/resources</code>.</li>
+            <li>Application configuration: <code>src/main/resources/application.properties</code>.
+            </li>
+        </ul>
+
+        <h2>Deployment</h2>
+        <p>Run the application in <em>dev mode</em> using: <code>mvn compile quarkus:dev</code>.
+        </p>
+        <p>Package it for <em>production</em> using: <code>./mvnw package</code>. It will produce <code>quarkus-ms-1.0.0-SNAPSHOT-runner.jar</code> in the <code>/target</code> directory.
+        </p>
+        <p>Run a native executable with: <code>./target/quarkus-ms-1.0.0-SNAPSHOT-runner</code> using: <code>./mvnw package -Pnative</code> or 
+        build in a container using: <code>./mvnw package -Pnative -Dquarkus.native.container-build=true</code>.</p>
+
+        <h2>Installed Features</h2>
+        <p><code>amazon-dynamodb, amazon-s3, cdi, kubernetes, kubernetes-client, rest-client, rest-client-jackson, resteasy, smallrye-health, smallrye-metrics, smallrye-openapi, swagger-ui</code>
+        among others defined in <code>pom.xml</code>.</p>
+    </div>
+
+    <div class="right-column">
+        <div class="right-section">
+            <h3>Artifact</h3>
+            <ul>
+                <li>GroupId: mx.conekta.qk</li>
+                <li>ArtifactId: quarkus-ms</li>
+                <li>Version: 1.0.0-SNAPSHOT</li>
+                <li>Quarkus Version: 1.6.1.Final</li>
+            </ul>
+        </div>
+        <div class="right-section">
+            <h3>Resources</h3>
+            <ul>
+                <li><a href="https://quarkus.io" target="_blank">Quarkus Web Site</a></li>
+                <li><a href="https://quarkus.io/guides/all-config" target="_blank">Configuration Properties</a></li>
+                <li><a href="https://quarkus.io/guides/deploying-to-kubernetes" target="_blank">Kubernetes</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
