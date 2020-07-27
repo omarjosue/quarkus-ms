@@ -15,7 +15,7 @@ public class ResourceTest {
           .when().get("/hello")
           .then()
              .statusCode(200)
-             .body(is("hello"));
+             .body(is("Welcome to Conekta!"));
     }
 
 }
